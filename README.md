@@ -31,28 +31,45 @@ Fastfetch should already be installed.
 
 ## Install
 
-Make the installer executable and run it:
+Clone the repository, enter the directory, then run the installer:
 
 ```bash
+git clone https://github.com/ilhamfirmansyahhub/simple-fastfetch-theme-manager.git
+cd simple-fastfetch-theme-manager
 chmod +x install.sh
 ./install.sh
 ```
 
-The installer copies the app to:
+The installer checks that Python 3, Fastfetch, and PySide6 are available. It then installs the application to:
 
 ```text
 ~/.local/share/simple-fastfetch-theme-manager/
 ```
 
-and creates a desktop entry at:
+### Application launcher integration
+
+The installer automatically creates a standard `.desktop` entry at:
 
 ```text
 ~/.local/share/applications/simple-fastfetch-theme-manager.desktop
 ```
 
-After installation, search for **Simple Fastfetch Theme Manager** in your application launcher. You can pin it like any other application.
+This means you do **not** need to open a terminal every time you want to edit Fastfetch.
+
+After installation:
+
+1. Open your desktop application's launcher/menu.
+2. Search for **Simple Fastfetch Theme Manager**.
+3. Launch it normally like any other application.
+4. You can pin it to your favorite applications or taskbar/dock if your desktop environment supports pinning.
+
+The launcher entry points to the installed copy under `~/.local/share/`, so moving or deleting the Git repository after installation does not break the launcher.
+
+If the launcher does not appear immediately, open the application menu again or log out and back in so your desktop environment refreshes its application list.
 
 ## Run from source
+
+You can also run the program directly from the repository without installing the launcher entry:
 
 ```bash
 chmod +x run.sh
@@ -68,7 +85,7 @@ chmod +x uninstall.sh
 ./uninstall.sh
 ```
 
-The uninstall script removes only the application files and launcher entry. Your Fastfetch configuration and assets in `~/.config/fastfetch/` are left untouched.
+The uninstall script removes only the installed application files and launcher entry. Your Fastfetch configuration and assets in `~/.config/fastfetch/` are left untouched.
 
 ## Fastfetch files
 
