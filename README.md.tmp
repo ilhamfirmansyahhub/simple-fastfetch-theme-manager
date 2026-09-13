@@ -1,0 +1,16 @@
+# Simple Fastfetch Theme Manager
+
+Install:
+
+```bash
+sudo pacman -S --needed git fastfetch pyside6
+git clone https://github.com/ilhamfirmansyahhub/simple-fastfetch-theme-manager.git
+cd simple-fastfetch-theme-manager
+bash install-desktop.sh
+```
+
+Then search **Fastfetch Theme Manager** in your application launcher.
+
+Run directly with `./run.sh`.
+
+Update with `git pull` from the repository directory.
