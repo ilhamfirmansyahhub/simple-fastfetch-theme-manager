@@ -1,5 +1,7 @@
 # Simple Fastfetch Theme Manager
 
+My reddit post: https://www.reddit.com/r/fastfetch/s/2Wpjx4fbkb
+
 A minimal native Linux GUI for editing a Fastfetch setup visually.
 
 ## Features
